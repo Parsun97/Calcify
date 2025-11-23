@@ -78,7 +78,7 @@ const BMRCalculator = () => {
           <h3 style={{fontSize: '24px', fontWeight: '700', marginBottom: '12px'}}>Your BMR Result</h3>
           <p style={{fontSize: '48px', fontWeight: '800', color: '#22d3ee', marginBottom: '8px'}}>{result}</p>
           <p style={{fontSize: '16px', opacity: 0.8}}>calories per day</p>
-          <p style={{marginTop: '16px', fontSize: '14px', opacity: 0.7'}}>This is the number of calories your body burns at rest.</p>
+          <p style={{marginTop: '16px', fontSize: '14px', opacity: 0.7}}>This is the number of calories your body burns at rest.</p>
         </div>
       )}
 
