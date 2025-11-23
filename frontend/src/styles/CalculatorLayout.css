@@ -1,0 +1,171 @@
+.calculator-page {
+  min-height: 100vh;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #22d3ee;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.calculator-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+}
+
+.calculator-main {
+  min-width: 0;
+}
+
+.calculator-header {
+  margin-bottom: 32px;
+}
+
+.calculator-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.calculator-description {
+  font-size: 18px;
+  color: rgba(232, 237, 244, 0.7);
+  line-height: 1.6;
+}
+
+.calculator-box {
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #22d3ee;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.calculator-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.info-section {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.info-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #22d3ee;
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(232, 237, 244, 0.8);
+  margin-bottom: 16px;
+}
+
+.formula-box {
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+  font-family: 'Courier New', monospace;
+  color: #22d3ee;
+  font-size: 16px;
+}
+
+.faq-section {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin-bottom: 24px;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(232, 237, 244, 0.7);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 968px) {
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .calculator-title {
+    font-size: 32px;
+  }
+
+  .calculator-box {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

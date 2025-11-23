@@ -1,53 +1,45 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import HomePage from './pages/HomePage';
+import BMICalculator from './pages/BMICalculator';
+import BMRCalculator from './pages/BMRCalculator';
+import LoanCalculator from './pages/LoanCalculator';
+import EMICalculator from './pages/EMICalculator';
+import AgeCalculator from './pages/AgeCalculator';
+import SIPCalculator from './pages/SIPCalculator';
+import PercentageCalculator from './pages/PercentageCalculator';
+import GSTCalculator from './pages/GSTCalculator';
+import DiscountCalculator from './pages/DiscountCalculator';
+import BodyFatCalculator from './pages/BodyFatCalculator';
+import CalorieCalculator from './pages/CalorieCalculator';
+import PregnancyCalculator from './pages/PregnancyCalculator';
+import CompoundInterestCalculator from './pages/CompoundInterestCalculator';
+import TipCalculator from './pages/TipCalculator';
+import CurrencyConverter from './pages/CurrencyConverter';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/bmi-calculator" element={<BMICalculator />} />
+        <Route path="/bmr-calculator" element={<BMRCalculator />} />
+        <Route path="/loan-calculator" element={<LoanCalculator />} />
+        <Route path="/emi-calculator" element={<EMICalculator />} />
+        <Route path="/age-calculator" element={<AgeCalculator />} />
+        <Route path="/sip-calculator" element={<SIPCalculator />} />
+        <Route path="/percentage-calculator" element={<PercentageCalculator />} />
+        <Route path="/gst-calculator" element={<GSTCalculator />} />
+        <Route path="/discount-calculator" element={<DiscountCalculator />} />
+        <Route path="/body-fat-calculator" element={<BodyFatCalculator />} />
+        <Route path="/calorie-calculator" element={<CalorieCalculator />} />
+        <Route path="/pregnancy-calculator" element={<PregnancyCalculator />} />
+        <Route path="/compound-interest-calculator" element={<CompoundInterestCalculator />} />
+        <Route path="/tip-calculator" element={<TipCalculator />} />
+        <Route path="/currency-converter" element={<CurrencyConverter />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
