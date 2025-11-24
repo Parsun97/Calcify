@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════════
+  📤 PUSH TO GITHUB - COPY & PASTE THESE COMMANDS
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create GitHub Repository First!
+───────────────────────────────────────
+Go to: https://github.com/new
+Create a new repository (don't add README)
+Copy the repository URL
+
+STEP 2: Replace YOUR_USERNAME and YOUR_REPO_NAME below
+───────────────────────────────────────────────────────
+
+cd /app/frontend
+
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
+git push -u origin main
+
+
+EXAMPLE (if username is "john" and repo is "calcify"):
+───────────────────────────────────────────────────────
+cd /app/frontend
+git remote add origin https://github.com/john/calcify.git
+git push -u origin main
+
+
+AUTHENTICATION:
+───────────────
+When prompted for password, use Personal Access Token:
+1. Go to: https://github.com/settings/tokens
+2. Generate new token (classic)
+3. Select 'repo' scope
+4. Use token as password
+
+
+AFTER PUSHING:
+──────────────
+✅ Code is on GitHub
+✅ Clone anywhere: git clone YOUR_GITHUB_URL
+✅ Deploy to Vercel: https://vercel.com (import from GitHub)
+
+═══════════════════════════════════════════════════════════════
