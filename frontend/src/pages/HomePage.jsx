@@ -121,9 +121,7 @@ const HomePage = () => {
             Fast, accurate, and easy-to-use calculators for all your daily calculations.
             From health to finance, we've got you covered.
           </p>
-          <div className="ad-placeholder" style={{marginTop: '40px', maxWidth: '728px', margin: '40px auto 0'}}>
-            Advertisement Space - 728x90
-          </div>
+          
         </div>
       </header>
 
@@ -148,9 +146,7 @@ const HomePage = () => {
             ))}
           </div>
 
-          <div className="ad-placeholder" style={{marginTop: '60px'}}>
-            Advertisement Space - Horizontal Banner
-          </div>
+          
         </div>
       </section>
 
