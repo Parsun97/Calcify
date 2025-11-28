@@ -17,6 +17,8 @@ import PregnancyCalculator from './pages/PregnancyCalculator';
 import CompoundInterestCalculator from './pages/CompoundInterestCalculator';
 import TipCalculator from './pages/TipCalculator';
 import CurrencyConverter from './pages/CurrencyConverter';
+import NeetingCalculator from './pages/NeetingCalculator';
+
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
         <Route path="/compound-interest-calculator" element={<CompoundInterestCalculator />} />
         <Route path="/tip-calculator" element={<TipCalculator />} />
         <Route path="/currency-converter" element={<CurrencyConverter />} />
+  <Route path="/Neeting-calculator" element={<NeetingCalculator />} />
       </Routes>
     </BrowserRouter>
   );
