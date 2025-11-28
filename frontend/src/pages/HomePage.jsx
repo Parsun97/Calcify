@@ -97,7 +97,14 @@ const HomePage = () => {
       path: '/currency-converter', 
       icon: <Globe className="calc-icon" />,
       description: 'Convert currencies'
-    }
+    },
+    {
+    name: 'Netting Calculator',
+    path: '/Neeting-calculator',
+      icon: <TrendingUp className="calc-icon" />,
+    description: 'Calculate material for netting/screens by dimensions & hole size',
+     
+  }
   ];
 
   return (
