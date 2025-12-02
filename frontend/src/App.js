@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import HomePage from './pages/HomePage';
 import BMICalculator from './pages/BMICalculator';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/currency-converter" element={<CurrencyConverter />} />
   <Route path="/Neeting-calculator" element={<NeetingCalculator />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   );
 }
